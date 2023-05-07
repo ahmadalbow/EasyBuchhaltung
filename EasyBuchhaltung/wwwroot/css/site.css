@@ -1,0 +1,274 @@
+:root {
+    --main-blue: #275CF6;
+    --main-blue-light: #4B79FF;
+} 
+html {
+    font-size: 14px;
+}
+ul{
+    list-style:none
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family: font-family: 'Circular Std', sans-serif;
+}
+
+/* Navbar start */
+
+.navbar {
+    height: 72px;
+    font-weight:500
+}
+
+.navbar .logo { 
+    height: 38px; 
+    width: 38px; 
+}
+
+.navbar .nav-link {
+    margin-right: 1rem;
+    margin-left:1rem
+}
+
+.main-btn {
+    background: var(--main-blue);
+    padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+    color: white;
+    width: fit-content;
+}
+
+.main-btn:hover {
+    background: var(--main-blue-light);
+    color: white;    
+}
+.main-btn:focus , .white-btn:focus{
+    box-shadow: none;
+}
+
+.white-btn {
+    background: white;
+    padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+    color: black;
+    width: fit-content
+}
+
+.white-btn:hover {
+    background: white;
+    color: #242424;
+    
+}
+
+.navbar-nav .nav-link:hover  {
+    color: var(--main-blue) !important
+}
+
+.navbar .navbar-toggler {
+    box-shadow: none;
+    background-color: var(--main-blue);
+    color: white;
+    height:36px;
+    border:none
+}
+/* Navbar end */
+
+/* Landing start */
+
+.landing{
+   
+    overflow:hidden;
+
+}
+ h1{
+    font-size: 4rem;
+}
+
+@media(max-width : 992px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+ p {
+    margin-bottom : 0.5rem;
+}
+ .text {
+    line-height: 1.6;
+    width:100%
+}
+
+
+.go-down {
+    height: 64px;
+    text-decoration: none;
+}
+.circle:hover {
+    color: var(--main-blue);
+    border: solid var(--main-blue) 0.5px;
+    cursor:pointer
+}
+.circle {
+    height: 60px;
+    width: 60px;
+    border: solid #808080 0.5px;
+    border-radius: 50%;
+    color:#808080;
+    position:absolute;
+}
+.circle {
+    height: 3rem;
+    width: 3rem;
+    border: solid #808080 0.5px;
+    border-radius: 50%;
+    color: #808080;
+    position: relative;
+    transition: 0.3s;
+}
+.circle i{
+    animation : bouncing 2s infinite;
+    border : none;
+    
+
+}
+@keyframes bouncing{
+    0%,10%,20%,50%,80%,100%{
+        transform:translateY(5px)
+    }
+    40%,60% {
+        transform: translateY(-5px)
+    }
+}
+/* Landing end */
+
+/* Gasgaber start */
+
+.gastgaber {
+    
+    
+    overflow: hidden;
+}
+.AI {
+    font-size: 10rem;
+    background: -webkit-linear-gradient(315deg, #0543F6, #DCADEE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Gastgaber end */
+
+
+/* Pricing start*/
+
+.plan-type-selecter {
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background-color: #EDEDED;
+    padding : 0;
+    
+}
+.plan-type-selecter .mover {
+    width: calc(50% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 5px;
+    background-color: white;
+    z-index:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    top:2px;
+    left:2px;
+}
+.plan-type-selecter .mover:hover {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+    animation: left-to-right 1s;
+}
+
+
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(0);
+        left: 2px;
+    }
+
+    100% {
+        transform: translateX(-100%) ;
+        left: calc(100% - 2px);
+    }
+}
+
+
+.jearlich {
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 2
+}
+.monatlich {
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #808080  ;
+}
+
+.price-plan-container {
+    width: 25rem;
+    height: 32rem;
+    background: #F5F6F7;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #eee;
+    position: relative;
+}
+.price-container {
+   
+}
+.line {
+    height: 2px;
+    width: 100%;
+    background: #afafaf;
+    position:absolute;
+    left:0px
+}
+
+.price-plan-container li i {
+    color: #61BA7F;
+    font-size: 1.2rem;
+    margin-right:0.8rem;
+      
+}
+.price-plan-container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-weight:600
+}
+
+
+/* Pricing end*/
+
+/* Footer Start */
+footer .logo {
+    height: 38px;
+
+}
+footer h1 {
+    font-size: 3rem;
+}
+/* Footer end */
