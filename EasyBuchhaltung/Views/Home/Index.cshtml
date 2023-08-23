@@ -1,8 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class=" landing row align-items-center justify-content-center pt-5 pb-5">
+@{
+    var ahmad = "ahmad";
+}
+<div class=" right row align-items-center justify-content-center position-relative">
     <div class="col-12 col-lg-6 order-2 order-lg-1 d-flex flex-column d-md-block justify-content-center align-items-center">
         <h1 class=" text-center text-md-start"> <span style="font-weight:700">E</span>asy <span style="font-weight:700 ; color : #275CF6">B</span>uchhaltung  </h1>
         <div class="text text-black-50  text-center text-md-start   mt-5  mb-5">
@@ -11,14 +13,15 @@
         <button class="btn main-btn "> Jetzt Probieren </button>
     </div>
     <div class="image col-12 col-md-10 col-lg-6 order-1 order-lg-2 align-items-center justify-content-center d-flex"><img class="img-fluid" src="~/images/landingimg.png" /></div>
+    <a href="#gastgaber" class=" go-down d-flex justify-content-center align-item-center position-absolute bottom-0">
+        <div class="circle d-flex justify-content-center align-items-center ">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+    </a>
 </div>
-<a href="#gastgaber" class=" go-down d-flex justify-content-center align-item-center ">
-    <div class="circle d-flex justify-content-center align-items-center"> 
-        <i class="fa-solid fa-arrow-down"></i>
-    </div> 
-</a>
 
-<div class=" gastgaber row align-items-center justify-content-center pt-5 pb-5" id="gastgaber">
+
+<div class=" left row align-items-center justify-content-center " id="gastgaber">
     <div class="image col-10 col-md-10 col-lg-6  align-items-center justify-content-center d-flex "><img class="img-fluid" src="~/images/Gastgaber.png" /></div>
     <div class="col-12 col-lg-6 d-flex flex-column  d-md-block justify-content-center align-items-center ">
         <h1 class="p-sm-1 text-center text-md-start">
@@ -37,7 +40,7 @@
     </div>
 </div>
 
-<div class=" landing row align-items-center justify-content-center pt-5 pb-5">
+<div class=" right row align-items-center justify-content-center ">
     <div class="col-12 col-lg-6 order-2 order-lg-1 d-flex flex-column d-md-block justify-content-center align-items-center">
         <h1 class=" text-center text-md-start">
             <span class="AI">AI</span>Rechnungs erkennung
@@ -53,7 +56,7 @@
     <div class="image col-12 col-md-10 col-lg-6 order-1 order-lg-2 align-items-center justify-content-center d-flex"><img class="img-fluid" src="~/images/AI.jpg" /></div>
 </div>
 
-<div class=" gastgaber row align-items-center justify-content-center pt-5 pb-5" id="gastgaber">
+<div class=" left row align-items-center justify-content-center " id="gastgaber">
     <div class="image col-10 col-md-10 col-lg-6  align-items-center justify-content-center d-flex "><img class="img-fluid" src="~/images/Folders.png" /></div>
     <div class="col-12 col-lg-6 d-flex flex-column  d-md-block justify-content-center align-items-center ">
         <h1 class="p-sm-1 text-center text-md-start">
@@ -71,7 +74,7 @@
     </div>
 </div>
 
-<div class=" landing row align-items-center justify-content-center pt-5 pb-5">
+<div class=" right row align-items-center justify-content-center ">
     <div class="col-12 col-lg-6 order-2 order-lg-1 d-flex flex-column d-md-block justify-content-center align-items-center">
         <h1 class=" text-center text-md-start">
             Persönliche Beratung durch unseren Steuerberater
@@ -90,9 +93,9 @@
     <h1 class=" text-center text-md-start">
         Preispläne
     </h1>
-    <button class="btn plan-type-selecter position-relative mt-5 mb-5">
+    <button  class="btn plan-type-selecter position-relative mt-5 mb-5">
         <span class="jearlich"> Jährlich</span>
-        <span class="monatlich"> Monatlich</span>
+        <span class="monatlich text-black-50"> Monatlich</span>
         <div class="mover position-absolute">           
         </div>
         
